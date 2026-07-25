@@ -1,0 +1,14 @@
+/node_modules
+/.node_modules-*
+/.pnpm-store
+/.next
+/.open-next
+/.wrangler
+/.catalog-optimized
+/out
+/.env*
+!.env.example
+*.log
+tsconfig.tsbuildinfo
+cloudflare-env.d.ts
+.DS_Store

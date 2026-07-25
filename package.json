@@ -1,0 +1,40 @@
+{
+  "name": "hunantopliving",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "optimize:assets": "cscript //nologo scripts\\run-photoshop-optimizer.vbs",
+    "sync:assets": "node scripts/sync-assets.mjs",
+    "cf:build": "node scripts/patch-opennext-windows-links.mjs && opennextjs-cloudflare build",
+    "cf:preview": "node scripts/patch-opennext-windows-links.mjs && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf:deploy": "node scripts/patch-opennext-windows-links.mjs && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+  },
+  "dependencies": {
+    "@react-email/components": "latest",
+    "lenis": "^1.3.17",
+    "lucide-react": "latest",
+    "next": "16.2.6",
+    "react": "latest",
+    "react-dom": "latest",
+    "resend": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@opennextjs/cloudflare": "latest",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.2.6",
+    "typescript": "5.9.3",
+    "wrangler": "latest"
+  },
+  "packageManager": "pnpm@11.9.0"
+}
