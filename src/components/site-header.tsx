@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="nav-shell">
         <Link href="/" className="wordmark" aria-label="HunanTopLiving home">
-          Hunan Top Living
+          Hunan Top Living Ceramic
         </Link>
 
         <nav className="desktop-nav" aria-label="Main navigation">
@@ -40,7 +40,7 @@ export function SiteHeader() {
 
       <div className={`mobile-menu ${mobileOpen ? "is-open" : ""}`} aria-hidden={!mobileOpen}>
         <div className="mobile-menu-head">
-          <span className="wordmark">Hunan Top Living</span>
+          <span className="wordmark">Hunan Top Living Ceramic</span>
           <button type="button" onClick={() => setMobileOpen(false)} aria-label={t.close}><X /></button>
         </div>
         <nav aria-label="Mobile navigation">

@@ -16,7 +16,7 @@ export function HomeContent() {
     <main id="top">
       <section className="home-intro">
         <div>
-          <p className="eyebrow">Hunan Top Living · 湖南顶点陶瓷</p>
+          <p className="eyebrow">Hunan Top Living Ceramic · 湖南顶点陶瓷</p>
           <h1>{t.heroTitle}</h1>
           <p className="hero-body">{t.heroBody}</p>
           <div className="hero-actions"><a href="#collections" className="button button-dark">{t.explore}<ArrowDown size={17} /></a><a href="#inquiry" className="button button-light">{t.inquire}<ArrowRight size={17} /></a></div>
@@ -24,14 +24,14 @@ export function HomeContent() {
         <p className="home-intro-note">{catalogImageCount} {t.pieces}</p>
       </section>
 
-      <section className="hero-stack-section" aria-label="Hunan Top Living featured collections">
+      <section className="hero-stack-section" aria-label="Hunan Top Living Ceramic featured collections">
         <ScrollStack className="hero-stack" itemDistance={32}>
           {heroImages.map((image, index) => <ScrollStackItem className="hero-stack-card" key={image.id}><Image src={image.src} alt="" fill priority={index < 2} sizes="100vw" /><span>{String(index + 1).padStart(2, "0")}</span></ScrollStackItem>)}
         </ScrollStack>
       </section>
 
       <section className="collections-section" id="collections">
-        <div className="section-heading"><div><p className="eyebrow">Hunan Top Living</p><h2>{t.collections}</h2></div><p>{t.collectionsBody}</p></div>
+        <div className="section-heading"><div><p className="eyebrow">Hunan Top Living Ceramic</p><h2>{t.collections}</h2></div><p>{t.collectionsBody}</p></div>
         <div className="collection-grid">
           {catalog.map((series) => {
             const cover = series.types.find((type) => type.cover)?.cover || series.types[0]?.images[0];
