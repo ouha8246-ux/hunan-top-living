@@ -25,8 +25,8 @@ export function HomeContent() {
       </section>
 
       <section className="hero-stack-section" aria-label="Hunan Top Living Ceramic featured collections">
-        <ScrollStack className="hero-stack" itemDistance={32}>
-          {heroImages.map((image, index) => <ScrollStackItem className="hero-stack-card" key={image.id}><Image src={image.src} alt="" fill priority={index < 2} sizes="100vw" /><span>{String(index + 1).padStart(2, "0")}</span></ScrollStackItem>)}
+        <ScrollStack className="hero-stack" useWindowScroll>
+          {heroImages.map((image, index) => <ScrollStackItem itemClassName="hero-stack-card" key={image.id}><Image src={image.src} alt="" fill priority={index < 2} sizes="(max-width: 860px) 88vw, 60vw" /><span>{String(index + 1).padStart(2, "0")}</span></ScrollStackItem>)}
         </ScrollStack>
       </section>
 
