@@ -4,10 +4,10 @@ import type { HeroImage, Series } from "@/types/catalog";
 export const heroImages = [
   {
     "id": "hero-1",
-    "src": "/catalog/ocean-collection/new-2027/001.jpg",
-    "width": 1920,
-    "height": 1080,
-    "sourceName": "01主图 拷贝.jpg"
+    "src": "/catalog/ocean-collection/new-2027/cover-v2.jpg",
+    "width": 2560,
+    "height": 1440,
+    "sourceName": "海洋系列主图01.jpg"
   },
   {
     "id": "hero-2",
@@ -25,10 +25,10 @@ export const heroImages = [
   },
   {
     "id": "hero-4",
-    "src": "/home-hero/004.jpg",
-    "height": 1410,
-    "width": 2508,
-    "sourceName": "000.系列主图 (5).jpg"
+    "src": "/catalog/cat-collection/new-2027/001.jpg",
+    "width": 2560,
+    "height": 1440,
+    "sourceName": "01主页图.jpg"
   },
   {
     "id": "hero-5",
@@ -1274,15 +1274,23 @@ export const catalog: readonly Series[] = [
         },
         "cover": {
           "id": "ocean-collection-new-2027-1",
-          "src": "/catalog/ocean-collection/new-2027/001.jpg",
-          "height": 1080,
-          "width": 1920,
-          "sourceName": "01主图 拷贝.jpg",
+          "src": "/catalog/ocean-collection/new-2027/cover-v2.jpg",
+          "height": 1440,
+          "width": 2560,
+          "sourceName": "海洋系列主图01.jpg",
           "isNew": true
         },
         "images": [
           {
             "id": "ocean-collection-new-2027-1",
+            "src": "/catalog/ocean-collection/new-2027/cover-v2.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "海洋系列主图01.jpg",
+            "isNew": true
+          },
+          {
+            "id": "ocean-collection-new-2027-original-cover",
             "src": "/catalog/ocean-collection/new-2027/001.jpg",
             "height": 1080,
             "width": 1920,
@@ -1319,6 +1327,14 @@ export const catalog: readonly Series[] = [
             "height": 1080,
             "width": 1920,
             "sourceName": "05 拷贝.jpg",
+            "isNew": true
+          },
+          {
+            "id": "ocean-collection-new-2027-6",
+            "src": "/catalog/ocean-collection/new-2027/006.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "海洋新曾.jpg",
             "isNew": true
           }
         ]
@@ -1592,6 +1608,242 @@ export const catalog: readonly Series[] = [
   },
   {
     "order": 4,
+    "slug": "cat-collection",
+    "name": {
+      "en": "Cat Collection",
+      "zh": "猫咪系列"
+    },
+    "types": [
+      {
+        "order": 1,
+        "slug": "new-2027",
+        "name": {
+          "en": "2027 New Collection",
+          "zh": "2027 新品"
+        },
+        "cover": {
+          "id": "cat-collection-new-2027-1",
+          "src": "/catalog/cat-collection/new-2027/001.jpg",
+          "height": 1440,
+          "width": 2560,
+          "sourceName": "01主页图.jpg",
+          "isNew": true
+        },
+        "images": [
+          {
+            "id": "cat-collection-new-2027-1",
+            "src": "/catalog/cat-collection/new-2027/001.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "01主页图.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-2",
+            "src": "/catalog/cat-collection/new-2027/002.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "1.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-3",
+            "src": "/catalog/cat-collection/new-2027/003.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "2.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-4",
+            "src": "/catalog/cat-collection/new-2027/004.jpg",
+            "height": 1717,
+            "width": 3052,
+            "sourceName": "3.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-5",
+            "src": "/catalog/cat-collection/new-2027/005.jpg",
+            "height": 1717,
+            "width": 3052,
+            "sourceName": "4.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-6",
+            "src": "/catalog/cat-collection/new-2027/006.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "5.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-7",
+            "src": "/catalog/cat-collection/new-2027/007.jpg",
+            "height": 1752,
+            "width": 3113,
+            "sourceName": "6.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-8",
+            "src": "/catalog/cat-collection/new-2027/008.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "7.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-9",
+            "src": "/catalog/cat-collection/new-2027/009.jpg",
+            "height": 1748,
+            "width": 3108,
+            "sourceName": "8.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-10",
+            "src": "/catalog/cat-collection/new-2027/010.jpg",
+            "height": 1743,
+            "width": 3098,
+            "sourceName": "9.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-11",
+            "src": "/catalog/cat-collection/new-2027/011.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "10.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-12",
+            "src": "/catalog/cat-collection/new-2027/012.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "11.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-13",
+            "src": "/catalog/cat-collection/new-2027/013.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "12.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-14",
+            "src": "/catalog/cat-collection/new-2027/014.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "13.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-15",
+            "src": "/catalog/cat-collection/new-2027/015.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "14.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-16",
+            "src": "/catalog/cat-collection/new-2027/016.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "15.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-17",
+            "src": "/catalog/cat-collection/new-2027/017.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "16.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-18",
+            "src": "/catalog/cat-collection/new-2027/018.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "17.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-19",
+            "src": "/catalog/cat-collection/new-2027/019.jpg",
+            "height": 1693,
+            "width": 3009,
+            "sourceName": "18.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-20",
+            "src": "/catalog/cat-collection/new-2027/020.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "19.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-21",
+            "src": "/catalog/cat-collection/new-2027/021.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "20.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-22",
+            "src": "/catalog/cat-collection/new-2027/022.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "21.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-23",
+            "src": "/catalog/cat-collection/new-2027/023.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "22.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-24",
+            "src": "/catalog/cat-collection/new-2027/024.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "23.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-25",
+            "src": "/catalog/cat-collection/new-2027/025.jpg",
+            "height": 1440,
+            "width": 2560,
+            "sourceName": "24.jpg",
+            "isNew": true
+          },
+          {
+            "id": "cat-collection-new-2027-26",
+            "src": "/catalog/cat-collection/new-2027/026.jpg",
+            "height": 2077,
+            "width": 3693,
+            "sourceName": "25.jpg",
+            "isNew": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "order": 5,
     "slug": "coffee-cup-collection",
     "name": {
       "en": "Coffee Cup Collection",
@@ -1825,7 +2077,7 @@ export const catalog: readonly Series[] = [
     ]
   },
   {
-    "order": 5,
+    "order": 6,
     "slug": "single-cup-collection",
     "name": {
       "en": "Single Cup Collection",
@@ -2387,4 +2639,4 @@ export const catalog: readonly Series[] = [
   }
 ];
 
-export const catalogImageCount = 276;
+export const catalogImageCount = 304;
