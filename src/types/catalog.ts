@@ -6,6 +6,7 @@ export type ImageAsset = {
   width: number;
   height: number;
   sourceName: string;
+  isNew?: boolean;
 };
 
 export type HeroImage = ImageAsset;

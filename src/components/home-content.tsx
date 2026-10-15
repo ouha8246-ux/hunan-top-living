@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { NewBadge } from "@/components/new-badge";
 import Link from "next/link";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { Suspense } from "react";
@@ -36,7 +37,7 @@ export function HomeContent() {
           {catalog.map((series) => {
             const cover = series.types.find((type) => type.cover)?.cover || series.types[0]?.images[0];
             const count = series.types.reduce((sum, type) => sum + type.images.length, 0);
-            return <Link className="collection-card" href={`/collections/${series.slug}`} key={series.slug}><div className="collection-image">{cover && <Image src={cover.src} alt={series.name[locale]} fill loading="lazy" sizes="(max-width: 760px) 100vw, 50vw" />}</div><div className="collection-meta"><div><span className="collection-number">{String(series.order).padStart(2, "0")}</span><h3>{series.name[locale]}</h3></div><span>{count} {t.pieces}<ArrowRight size={18} /></span></div></Link>;
+            return <Link className="collection-card" href={`/collections/${series.slug}`} key={series.slug}><div className="collection-image">{cover && <Image src={cover.src} alt={series.name[locale]} fill loading="lazy" sizes="(max-width: 760px) 100vw, 50vw" />}{cover?.isNew && <NewBadge />}</div><div className="collection-meta"><div><span className="collection-number">{String(series.order).padStart(2, "0")}</span><h3>{series.name[locale]}</h3></div><span>{count} {t.pieces}<ArrowRight size={18} /></span></div></Link>;
           })}
         </div>
       </section>
